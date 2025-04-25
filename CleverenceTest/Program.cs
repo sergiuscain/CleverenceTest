@@ -12,7 +12,7 @@ namespace CleverenceTest
         {
             while (true)
             {
-                Console.WriteLine("Введите команду:\n1 - Сжатие текста\n2 - Привод лог файлов к единому формату.\nexit - выход.");
+                Console.WriteLine("Введите команду:\n1 - Сжатие текста\n2 - Декомпрессия текста\n3 - Привод лог файлов к единому формату.\nexit - выход.");
                 string cmd = Console.ReadLine();
                 if (cmd == "1")
                 {
@@ -20,6 +20,16 @@ namespace CleverenceTest
                     string line = Console.ReadLine();
                     var compressionResult = Task1.Compression(line);
                     Console.WriteLine(compressionResult);
+                    Console.WriteLine("Нажмите любую клавишу для возврата в меню");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+                if (cmd == "2")
+                {
+                    Console.WriteLine("Введите строку для декомпрессии!");
+                    string line = Console.ReadLine();
+                    var deCompressionResult = Task1.DeCompression(line);
+                    Console.WriteLine(deCompressionResult);
                     Console.WriteLine("Нажмите любую клавишу для возврата в меню");
                     Console.ReadKey();
                     Console.Clear();
