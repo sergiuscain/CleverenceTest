@@ -8,6 +8,12 @@ namespace CleverenceTest
 {
     public static class Task1
     {
+        /// <summary>
+        /// Метод сжимает текст в формат, в котором каждый повторяющийся подряд символ преобразуется в строку с обозначением количества повторяющихся символов
+        /// aaabbccc => "a3b2c3"
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public static string Compression(string input)
         {
             /* Добавил пробел в конце строки, что бы учитывать и последний символ
@@ -40,6 +46,11 @@ namespace CleverenceTest
 
             return output;
         }
+        /// <summary>
+        /// Преобразует формат a3b2c3 в формат aaabbccc (после каждого символа цифра, которая обозначает, сколько раз повторяется этот символ)
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public static string DeCompression(string input)
         {
             string output = string.Empty;
