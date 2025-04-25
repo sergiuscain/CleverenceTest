@@ -4,4 +4,4 @@
 ![image](https://github.com/user-attachments/assets/ade0d74e-ae66-4236-9596-723a78a7a39b)
 ## 2) Декомпрессия текста:
 ![image](https://github.com/user-attachments/assets/a40a6012-0b2e-4d48-a4ae-8cd6692a30da)
-
+## Второе и третье задание можно посмотреть в коде))
